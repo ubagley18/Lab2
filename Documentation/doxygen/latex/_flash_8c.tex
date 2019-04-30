@@ -1,0 +1,40 @@
+\hypertarget{_flash_8c}{}\section{C\+:/\+Users/12913000/git/04/sources/\+Flash.c File Reference}
+\label{_flash_8c}\index{C\+:/\+Users/12913000/git/04/sources/\+Flash.\+c@{C\+:/\+Users/12913000/git/04/sources/\+Flash.\+c}}
+
+
+Allocate variable memory, erase and write to flash memory.  
+
+
+{\ttfamily \#include \char`\"{}Flash.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}M\+K70\+F12.\+h\char`\"{}}\\*
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_t_f_c_c_o_b}{T\+F\+C\+C\+O\+B}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{group__main__module_gaa5782279b5e558cafc2f135c0a1177d3}{Flash\+\_\+\+Init} (void)
+\begin{DoxyCompactList}\small\item\em Enables the Flash module. \end{DoxyCompactList}\item 
+bool \hyperlink{group__main__module_ga50871aff0f5af1e092aea3ed2545cf72}{Flash\+\_\+\+Allocate\+Var} (volatile void $\ast$$\ast$variable, const uint8\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Allocates space for a non-\/volatile variable in the Flash memory. \end{DoxyCompactList}\item 
+bool \hyperlink{group__main__module_ga06868787ccef73e69bd236d3b93b68f3}{Flash\+\_\+\+Erase} (void)
+\begin{DoxyCompactList}\small\item\em Erases the entire Flash sector. \end{DoxyCompactList}\item 
+bool \hyperlink{group__main__module_ga5da7dcc0c6ef765546c79bbe25b48479}{Flash\+\_\+\+Write32} (volatile uint32\+\_\+t $\ast$const address, const uint32\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes a 32-\/bit number to Flash. \end{DoxyCompactList}\item 
+bool \hyperlink{group__main__module_ga1458f5e4ac15e1848ae0bde32fe5b5f3}{Flash\+\_\+\+Write16} (volatile uint16\+\_\+t $\ast$const address, const uint16\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes a 16-\/bit number to Flash. \end{DoxyCompactList}\item 
+bool \hyperlink{group__main__module_ga1e6f34b272d8ed7b0f897b43e65f2cc0}{Flash\+\_\+\+Write8} (volatile uint8\+\_\+t $\ast$const address, const uint8\+\_\+t data)
+\begin{DoxyCompactList}\small\item\em Writes an 8-\/bit number to Flash. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Allocate variable memory, erase and write to flash memory. 
+
+\begin{DoxyAuthor}{Author}
+Jeong Bin Lee \& Uldis Bagley 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+21 Mar 2019 
+\end{DoxyDate}
