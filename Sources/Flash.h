@@ -14,7 +14,6 @@
 // new types
 #include "types.h"
 
-
 // FLASH data access
 #define _FB(flashAddress)  *(uint8_t  volatile *)(flashAddress)
 #define _FH(flashAddress)  *(uint16_t volatile *)(flashAddress)
